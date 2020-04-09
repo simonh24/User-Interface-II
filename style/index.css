@@ -47,6 +47,7 @@ table {
 
 * {
     /* border: 2px solid red; */
+    box-sizing: border-box;
 }
 
 /* General Styles */
@@ -61,6 +62,7 @@ section {
 }
 h1, h2, h3, h4 {
     font-size: 36px;
+    font-family: 'Walter Turncoat', cursive;
 }
 /* end of General Styles */
 
@@ -83,7 +85,8 @@ header nav a:hover {
 h1 {
 	width: 30%;
 	padding-bottom: 2%;
-	border-bottom: 2px solid #F1F1F1;
+    border-bottom: 2px solid #F1F1F1;
+    font-family: 'Walter Turncoat', cursive;
 }
 
 header nav {
@@ -94,13 +97,10 @@ header nav {
 .links {
     display: flex;
     justify-content: space-evenly;
+    font-family: 'Walter Turncoat', cursive;
 }
 
 @keyframes headerLinks {
-    0% {
-        background: white;
-        color: black;
-    }
     100% {
         background: black;
         color: yellow;
@@ -117,6 +117,7 @@ header nav {
     background: black;
     align-items: center;
     border: 2px solid #42f5c2;
+    font-family: 'Crushed', cursive;
 }
 
 .intro img {
@@ -124,13 +125,23 @@ header nav {
 }
 
 .intro nav {
-    width: 35%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 .intro nav a {
-    padding: 3%;
-    margin: 10%;
     color: cyan;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    border: 0;
+    font-size: 24px;
+}
+
+.intro nav a:hover {
+    animation: introProjects 0.5s forwards;
 }
 
 .introText {
@@ -146,8 +157,15 @@ header nav {
 
 .intro p {
     text-align: center;
+    font-size: 24px;
+    letter-spacing: 1.4;
 }
 
+@keyframes introProjects {
+    100% {
+        background-color: #ca1ee8;
+    }
+}
 
 /* gallery */
 .gallery {
@@ -169,6 +187,7 @@ header nav {
     text-align: center;
     font-size: 22px;
     color: pink;
+    font-family: 'Mate SC', serif;
 }
 
 /* footer */
@@ -177,4 +196,37 @@ footer {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
+}
+
+footer nav a {
+    font-family: 'Walter Turncoat', cursive;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 15%;
+}
+
+footer nav a {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 0;
+}
+
+footer nav a:hover {
+    animation: footerContact 0.5s forwards;
+}
+
+@keyframes footerContact {
+    100% {
+        background: #42f5a7;
+    }
 }
