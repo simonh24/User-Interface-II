@@ -1,1 +1,165 @@
 /* Add CSS styling here */
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset */
+
+* {
+    /* border: 2px solid red; */
+}
+
+/* General Styles */
+body {
+    margin: 5%;
+    background-image: url(https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1315&q=80);
+    background-size: cover;
+}
+section {
+    
+}
+h1, h2, h3, h4 {
+    font-size: 36px;
+}
+/* end of General Styles */
+
+/* header styling */
+header {
+    margin: 2%;
+}
+
+nav a {
+    padding: 2%;
+    border: 2px solid pink;
+    font-size: 22px;
+    color: green;
+}
+
+header nav a:hover {
+    animation: headerLinks 1s forwards;
+}
+
+h1 {
+	width: 30%;
+	padding-bottom: 2%;
+	border-bottom: 2px solid #F1F1F1;
+}
+
+header nav {
+    width: 30%;
+    margin-top: 2%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes headerLinks {
+    0% {
+        background: white;
+        color: black;
+    }
+    100% {
+        background: black;
+        color: yellow;
+    }
+}
+
+/* intro styling */
+
+.intro {
+    display: flex;
+    padding: 1%;
+    width: 78%;
+    margin: 3% 10%;
+    background: black;
+    align-items: center;
+    border: 2px solid #42f5c2;
+}
+
+.intro img {
+    width: 49%;
+}
+
+.introText {
+    width: 35%;
+    margin-left: 8%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/* gallery */
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: space-between;
+    width: 80%;
+    margin: 0 10% 5% 10%;
+}
+
+.gallery figure {
+    margin: 5% 5% 0 5%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.gallery figure figcaption {
+    text-align: center;
+    font-size: 22px;
+    color: pink;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
