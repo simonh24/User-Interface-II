@@ -52,7 +52,6 @@ table {
 
 /* General Styles */
 body {
-    margin: 5%;
     background-image: url(https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1315&q=80);
     background-size: cover;
     /* background: black; */
@@ -228,5 +227,42 @@ footer nav a:hover {
 @keyframes footerContact {
     100% {
         background: #42f5a7;
+    }
+}
+
+.bottom {
+    background: silver;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer nav img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .intro nav a {
+        width: auto;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer nav {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    footer nav a {
+        text-align: center;
+        max-width: 80%;
+        max-height: 80%;
     }
 }
