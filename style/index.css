@@ -78,7 +78,7 @@ nav a {
     padding: 2%;
     border: 2px solid pink;
     font-size: 2.2rem;
-    color: green;
+    color: black;
 }
 
 header nav a:hover {
@@ -188,8 +188,8 @@ header nav {
 
 .gallery figure figcaption {
     text-align: center;
-    font-size: 2.2rem;
-    color: pink;
+    font-size: 2.4rem;
+    color: white;
     font-family: 'Mate SC', serif;
 }
 
@@ -299,5 +299,8 @@ footer nav img {
     }
     .links {
         justify-content: center;
+    }
+    .intro nav {
+        width: 50%;
     }
 }
